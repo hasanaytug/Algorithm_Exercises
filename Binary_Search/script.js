@@ -6,7 +6,7 @@ function binarySearch(arr, target) {
     return "Number doesn't exist";
   }
 
-  while (start < end || start == end) {
+  while (start <= end) {
     let middle = start + Math.floor((end - start) / 2);
     console.log(
       `start: ${arr[start]} => end: ${arr[end]} => middle: ${arr[middle]}`
